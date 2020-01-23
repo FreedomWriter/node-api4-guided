@@ -24,10 +24,16 @@ _"Single Responsiblity Principle"_
    start is one of the few keywords that you don't have to use "run" with.
 
 2. Add dotenv as a dependency `npm i dotenv`
+
    - You can add an environment variable by typing `export PORT=4000` in the terminal (to remove `unset PORT`). This is an alternative to dotenv?
    - `const dotenv = require('dotenv').config()` at the highest level in index.js (assuming that's where your server is listening)
    - At the root, create a file named `.env`
    - Hide your config data: in your gitignore file include `.env`
+
+3. In Heroku
+   - create a new app
+   - connect to github repo
+   - select continous deployment
 
 ## Misc
 
